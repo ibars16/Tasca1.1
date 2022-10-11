@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center|center_horizontal|center_vertical"
+    android:theme="@style/AppTheme"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:gravity="center"
+        android:text="@string/title"
+        android:theme="@style/AppTheme.title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="128dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="36dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:paddingEnd="20dp"
+        android:text="@string/results"
+        android:theme="@style/AppTheme.listResults"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number" />
+
+    <TextView
+        android:id="@+id/seconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center|center_vertical"
+        android:layoutDirection="inherit"
+        android:theme="@style/AppTheme.results"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/results"
+        />
+
+    <TextView
+        android:id="@+id/minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:theme="@style/AppTheme.results"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seconds"
+        android:paddingStart="5dp"/>
+
+
+
+    <TextView
+        android:id="@+id/years"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:theme="@style/AppTheme.results"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minutes"
+        android:paddingEnd="3dp"/>
+
+    <TextView
+        android:id="@+id/hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:theme="@style/AppTheme.results"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/years"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="113dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="36dp"
+        android:icon="@drawable/boton"
+        android:text="@string/button"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#F44336"
+        android:textSize="12dp"
+        android:theme="@style/AppTheme.boton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="160dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="@string/number"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toStartOf="@+id/spinner"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="107dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.296"
+        app:srcCompat="@drawable/tim" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

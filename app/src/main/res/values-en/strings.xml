@@ -1,0 +1,7 @@
+<resources>
+    <string name="title">Time unit converter</string>
+    <string name="number">Enter the amount</string>
+    <string name="results">List of results:</string>
+    <string name="button">Calculate</string>
+    <string name="app_name">Converter</string>
+</resources>
